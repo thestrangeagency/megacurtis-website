@@ -156,6 +156,14 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
+// 'gulp deploy' -- pushes dist folder to Github
+gulp.task('deploy', () => {
+  return gulp.src('dist/**/*')
+    .pipe($.ghPagesCname({
+      /*cname: 'megacurtis.com'*/
+    }));
+});
+
 gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
