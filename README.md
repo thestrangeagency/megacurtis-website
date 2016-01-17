@@ -8,12 +8,17 @@ $ npm install
 $ gulp serve
 ```
 
+### to build:
+```
+$ gulp
+```
+
 ### to run distribution build:
 ```
 $ gulp serve:dist
 ```
 
-### to build:
+### to deploy:
 ```
-$ gulp
+$ gulp deploy
 ```
