@@ -160,7 +160,7 @@ gulp.task('wiredep', () => {
 gulp.task('deploy', () => {
   return gulp.src('dist/**/*')
     .pipe($.ghPagesCname({
-      /*cname: 'megacurtis.com'*/
+      cname: 'megacurtis.strange.agency'
     }));
 });
 
