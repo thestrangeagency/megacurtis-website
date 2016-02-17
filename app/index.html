@@ -135,6 +135,17 @@
       
       </div>
 
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>Comments?</h2>
+
+            <div id="disqus_thread"></div>
+
+          </div>
+        </div>
+      
+      </div>
+
       <div class="footer">
       </div>
     </div>
@@ -173,5 +184,22 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+
+    <script>
+    var disqus_config = function () {
+      this.page.url = 'http://megacurtis.strange.agency'; // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = 'megacurtis'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+
+    s.src = '//megacurtis.disqus.com/embed.js';
+
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+
   </body>
 </html>
